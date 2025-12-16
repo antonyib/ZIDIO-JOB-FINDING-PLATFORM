@@ -3,7 +3,7 @@ Zidio is a comprehensive web-based Internship &amp;amp; Job Management Portal th
 # Installation Guide
 Prerequisites
 
-Java Development Kit (JDK)
+Java Development Kit (JDK) 
 
 Version: JDK 8 or higher
 Download: Oracle JDK
