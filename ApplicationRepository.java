@@ -1,0 +1,17 @@
+package com.JobFindingPlatform.Repository;
+
+import java.util.List;
+import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import com.JobFindingPlatform.Entity.Application;
+import com.JobFindingPlatform.Enum.JobType; 
+
+@Repository
+public interface ApplicationRepository extends JpaRepository<Application, Long> {
+    List<Application> findByJobSeekerEmail(String jobSeekerEmail);
+    List<Application> findByRecruiterEmail(String recruiterEmail);
+    List<Application> findByJobTitle(String jobTitle);
+    List<Application> findByJobType(JobType jobType);
+    Optional<Application> findByJobSeekerEmailAndJobId(String email, Long jobId);
+}
